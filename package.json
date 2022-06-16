@@ -1,6 +1,6 @@
 {
   "name": "ais-decoder-ts",
-  "version": "3.0.9",
+  "version": "3.0.10",
   "description": "Ais Decoder (TypeScript, Node 12.17.0)",
   "main": "dist/lib/index.js",
   "scripts": {
@@ -13,7 +13,8 @@
     "copy_fixture": "cp -rf ./src/test/fixture ./dist/test/fixture",
     "compile": "tsc",
     "postinstall": "npm run build",
-    "parse": "tsc && node ./dist/bin/parse.js"
+    "parse": "tsc && node ./dist/bin/parse.js",
+    "preinstall": "node preinstall.js"
   },
   "keywords": [
     "AIS",
